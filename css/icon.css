@@ -1,0 +1,26 @@
+.nsy-icon {
+    width: 50px;
+    height: 50px;
+    background-size: 100%;
+    overflow: hidden;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+/*.nsy-calendar {
+    background-image: url('../images/app/129.png');
+}
+.nsy-calendar.icon-active {
+    background-image: url('../images/app/39.png');
+}*/
+.nsy-calendar {
+    background-color: var(--grey);
+    -webkit-mask: url('../images/app/icon/ic_calendar.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/icon/ic_calendar.svg');
+}
+/*.icon-folder.icon-active {
+    background-color: var(--blue);
+}
+.icon-folder.green, .icon-folder.icon-green {
+    background-color: var(--green);
+}*/

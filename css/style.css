@@ -1,0 +1,220 @@
+:root {
+    --yellow: #FFD058;
+    --green: #35BD7C;
+    --dark-blue: #1F4A89;
+    --ink: #121747;
+    --grey: #c4c4c4;
+    --light-grey: #888888;
+    --box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+@font-face {
+    font-family: Automobile;
+    src: url('../fonts/Automobile Contest.ttf');
+}
+@font-face {
+    font-family: Antonio;
+    src: url(../fonts/Antonio-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: Antonio;
+    src: url(../fonts/Antonio-Bold.ttf);
+    font-weight: bold;
+}
+
+.grid-md-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.text-green {
+    color: var(--green);
+}
+
+.product__item img {
+    width: 100%;
+}
+
+/*@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 300;
+}*/
+.menu {
+    background-color: transparent;
+    margin-top: -5px;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 16px 24px;
+    color: white;
+    top: 0;
+    width: 100%;
+}
+.menu-md {
+    display: none;
+}
+.menu .menu-frame {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+    /*padding: 25px 0px;*/
+}
+.menu .menu-item {
+    float: left;
+    list-style: none;
+    /*border-right: 1px solid;*/
+    text-align: center;
+    text-transform: uppercase;
+    color: #959595;
+    cursor: pointer;
+    padding: 8px 16px;
+    position: relative;
+}
+.menu .menu-item a {
+    color: white;
+    text-transform: capitalize;
+}
+.menu .menu-item.active a {
+    font-weight: bold;
+}
+.menu .menu-item a:hover {
+    text-decoration: none;
+}
+.menu .menu-item:after, .menu .menu-item:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transition: all 0.35s;
+}
+.menu .menu-item.active:after, .menu .menu-item:hover:after {
+    width: 12px;
+    left: 0;
+}
+
+.menu .menu-item:last-child {
+    border-right: none;
+}
+.register-cart .cart {
+    padding: 0 10px;
+    cursor: pointer;
+}
+.register-cart .login button {
+    padding: 0 16px;
+    background-color: transparent;
+    border: none;
+}
+
+.register-cart {
+    text-align: right;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.register-button button {
+    border: 1px solid white;
+    background-color: #ffffff00;
+    border-radius: 4px;
+    color: white;
+    padding: 11px 16px;
+    transition: all 0.35s;
+}
+.register-button button:hover {
+    background-color: #ffffff32;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    /*transform: translateY(-50%);*/
+    transform: translateY(100%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    animation: slideup 3s;
+    animation-fill-mode: forwards;
+}
+.insprite {
+    color: var(--yellow);
+    font-size: 48px;
+    font-family: Antonio;
+    left: 69px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+.within {
+    font-family: Automobile;
+    font-size: 135px;
+    color: white;
+    text-transform: capitalize;
+    line-height: 155px;
+    margin-top: -63px;
+}
+.page-section-head {
+    text-align: center;
+    padding-top: 64px;
+    padding-bottom: 36px;
+}
+.page-section__title {
+    font-family: 'Antonio';
+    font-size: 32px;
+    line-height: 46px;
+    font-weight: bold;
+    color: var(--ink);
+    letter-spacing: 0.04em;
+    padding-bottom: 10px;
+}
+
+.page-section__comment {
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--light-grey);
+}
+.product__item {
+    box-shadow: var(--box-shadow);
+}
+.product__content {
+    padding: 24px;
+}
+.product__content__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 25px;
+    color: var(--dark-blue);
+    margin-bottom: 7px
+}
+.product__content__rate {
+    margin-bottom: 17px;
+}
+.product__list .icon {
+    display: inline-block;
+}
+.product__list .tour-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+.product__list .nsy-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-50%);
+    }
+}
