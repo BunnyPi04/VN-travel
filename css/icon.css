@@ -18,6 +18,36 @@
     -webkit-mask-size: 100% 100%;
     mask-image: url('../images/app/icon/ic_calendar.svg');
 }
+.nsy-ticket {
+    background-color: var(--grey);
+    -webkit-mask: url('../images/app/icon/ic_ticket.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/icon/ic_ticket.svg');
+}
+.nsy-location {
+    background-color: var(--grey);
+    -webkit-mask: url('../images/app/icon/ic_location.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/icon/ic_location.svg');
+}
+.nsy-arrow-right {
+    background-color: var(--grey);
+    -webkit-mask: url('../images/app/icon/ic_arrow.svg') no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-image: url('../images/app/icon/ic_arrow.svg');
+}
+.nsy-slide-arrow-right {
+    background: url('../images/app/icon/arrow_right.svg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.nsy-slide-arrow-left {
+    background: url('../images/app/icon/arrow_right.svg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transform: rotate(180deg);
+}
+
 /*.icon-folder.icon-active {
     background-color: var(--blue);
 }

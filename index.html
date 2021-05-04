@@ -10,40 +10,48 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/icon.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- <script src="../assets/js/script.js"></script> -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="main full-width-page">
         <div class="home-banner-section">
             <div class="">
-                <div id="myCarousel" class="main-slide w-100 carousel slide" data-ride="carousel">
+                <div id="home-slide" class="carousel slide" data-ride="carousel">
+
+                    <!-- Indicators -->
+<!--                     <ul class="carousel-indicators">
+                        <li data-target="#home-slide" data-slide-to="0" class="active"></li>
+                        <li data-target="#home-slide" data-slide-to="1"></li>
+                        <li data-target="#home-slide" data-slide-to="2"></li>
+                    </ul> -->
+                  
+                    <!-- The slideshow -->
                     <div class="carousel-inner">
-                        <div class="item active">
-                            <img class="slide-img" src="images/app/bg.png"/>
-                        </div> 
-                        <div class="item">
-                            <img class="slide-img" src="images/app/bg.png"/>
-                        </div> 
-                        <div class="item">
-                            <img class="slide-img" src="images/app/bg.png"/>
-                        </div> 
-                        <div class="item">
-                            <img class="slide-img" src="images/app/bg.png"/>
-                        </div> 
-                        <div class="slide-overlay"></div>
-<!--                         <a class="prev-slide carousel-control" href="#myCarousel" data-slide="prev">
-                            <img src="img/slide-arrow.png">
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="next-slide carousel-control" href="#myCarousel" data-slide="next">
-                            <img src="img/slide-arrow.png" style="transform: scaleX(-1);">
-                            <span class="sr-only">Next</span>
-                        </a> -->
+                        <div class="carousel-item active">
+                            <img src="images/app/bg.png" alt="Los Angeles" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/app/bg.png" alt="Chicago" width="1100" height="500">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="images/app/bg.png" alt="New York" width="1100" height="500">
+                        </div>
                     </div>
+                  
+                    <!-- Left and right controls -->
+<!--                     <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#demo" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a> -->
                     <div class="banner-text">
                         <div class="insprite">Inspiring destinations</div>
                         <div class="within">Within your Reach.</div>
@@ -92,56 +100,1041 @@
         <!-- end home slide -->
 
         <!-- Best selling tour -->
-        <div class="best-selling-tour container">
-            <div class="page-section-head">
-                <div class="page-section__title">
-                    Best Selling Tour Packages 2020
+        <div class="best-selling-tour">
+            <div class="container">
+                <div class="page-section-head">
+                    <div class="page-section__title">
+                        Best Selling Tour Packages 2020
+                    </div>
+                    <div class="page-section__comment">
+                        Many our clients have started the journey to discover Southeast Asia with these tour packages
+                    </div>
                 </div>
-                <div class="page-section__comment">
-                    Many our clients have started the journey to discover Southeast Asia with these tour packages
-                </div>
-            </div>
-            <div class="page-section-main">
-                <div class="col-md-4 product__list tour">
-                    <div class="product__item">
-                        <div class="product__image">
-                            <img src="images/app/demo-tour-1.png">
-                        </div>
-                        <div class="product__content">
-                            <div class="product__content__title">
-                                Grand Indochina Tour
+                <div class="page-section-main row">
+                    <div class="col-md-4 product__list tour">
+                        <div class="product__item">
+                            <div class="product__image">
+                                <img src="images/app/demo-tour-1.png">
                             </div>
-                            <div class="product__content__rate">
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <span class="fa fa-star"></span>
-                                (120)
-                            </div>
-                            <div class="tour-info">
-                                <div class="info-item">
-                                    <div class="icon">
-                                        <span class="nsy-icon nsy-calendar"></span>
+                            <div class="product__content">
+                                <div class="product__content__title">
+                                    Grand Indochina Tour
+                                </div>
+                                <div class="product__content__rate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    (120)
+                                </div>
+                                <div class="tour-info">
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-calendar"></span>
+                                        </div>
+                                        <div class="text">
+                                            <span class="text-green">21 Days</span>
+                                        </div>
                                     </div>
-                                    <div class="text">
-                                        <span class="text-green">21 Days</span>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-ticket"></span>
+                                        </div>
+                                        <div class="text weight-600">
+                                            <span>From</span>
+                                            <span class="text-green">$2,136</span>
+                                            <span>pp</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-location"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Hanoi, Vietnam
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-arrow-right"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Vientiane, Laos
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="info-item">
-                                    <div class="icon">
-                                        <span class="nsy-icon nsy-calendar"></span>
+                                <div class="tour-button">
+                                    <div class="book-button text-right">
+                                        <button class="golden-gradient-button">Book Now</button>
                                     </div>
-                                    <div class="text">
-                                        <span>From</span>
-                                        <span class="text-green text-bold">21 Days</span>
-                                        <span>pp</span>
+                                    <div class="text-detail text-left">
+                                        <a href="#">Tour detail</a> → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 product__list tour">
+                        <div class="product__item">
+                            <div class="product__image">
+                                <img src="images/app/demo-tour-1.png">
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__title">
+                                    Grand Indochina Tour
+                                </div>
+                                <div class="product__content__rate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    (120)
+                                </div>
+                                <div class="tour-info">
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-calendar"></span>
+                                        </div>
+                                        <div class="text">
+                                            <span class="text-green">21 Days</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-ticket"></span>
+                                        </div>
+                                        <div class="text weight-600">
+                                            <span>From</span>
+                                            <span class="text-green">$2,136</span>
+                                            <span>pp</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-location"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Hanoi, Vietnam
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-arrow-right"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Vientiane, Laos
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-button">
+                                    <div class="book-button text-right">
+                                        <button class="golden-gradient-button">Book Now</button>
+                                    </div>
+                                    <div class="text-detail text-left">
+                                        <a href="#">Tour detail</a> → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 product__list tour">
+                        <div class="product__item">
+                            <div class="product__image">
+                                <img src="images/app/demo-tour-1.png">
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__title">
+                                    Grand Indochina Tour
+                                </div>
+                                <div class="product__content__rate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    (120)
+                                </div>
+                                <div class="tour-info">
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-calendar"></span>
+                                        </div>
+                                        <div class="text">
+                                            <span class="text-green">21 Days</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-ticket"></span>
+                                        </div>
+                                        <div class="text weight-600">
+                                            <span>From</span>
+                                            <span class="text-green">$2,136</span>
+                                            <span>pp</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-location"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Hanoi, Vietnam
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-arrow-right"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Vientiane, Laos
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-button">
+                                    <div class="book-button text-right">
+                                        <button class="golden-gradient-button">Book Now</button>
+                                    </div>
+                                    <div class="text-detail text-left">
+                                        <a href="#">Tour detail</a> → 
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="explore text-center">
+                    <a href="">Explore Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- best selling short trip -->
+        <div class="best-selling-trip">
+            <div class="container">
+                <div class="page-section-head">
+                    <div class="page-section__title">
+                        Best Selling Short Trips
+                    </div>
+                    <div class="page-section__comment">
+                        We would love to provide a list of the best selling short trips
+                    </div>
+                </div>
+                <div class="page-section-main row">
+                    <div class="col-md-3 product__list tour">
+                        <div class="product__item">
+                            <div class="product__image">
+                                <img src="images/app/demo-tour-1.png">
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__title">
+                                    Grand Indochina Tour
+                                </div>
+                                <div class="product__content__rate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    (120)
+                                </div>
+                                <div class="tour-info">
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-calendar"></span>
+                                        </div>
+                                        <div class="text">
+                                            <span class="text-green">21 Days</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-ticket"></span>
+                                        </div>
+                                        <div class="text weight-600">
+                                            <span>From</span>
+                                            <span class="text-green">$2,136</span>
+                                            <span>pp</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-location"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Hanoi, Vietnam
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-arrow-right"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Vientiane, Laos
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-button">
+                                    <div class="book-button text-right">
+                                        <button class="golden-gradient-button">Book Now</button>
+                                    </div>
+                                    <div class="text-detail text-left">
+                                        <a href="#">Tour detail</a> → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product__list tour">
+                        <div class="product__item">
+                            <div class="product__image">
+                                <img src="images/app/demo-tour-1.png">
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__title">
+                                    Grand Indochina Tour
+                                </div>
+                                <div class="product__content__rate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    (120)
+                                </div>
+                                <div class="tour-info">
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-calendar"></span>
+                                        </div>
+                                        <div class="text">
+                                            <span class="text-green">21 Days</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-ticket"></span>
+                                        </div>
+                                        <div class="text weight-600">
+                                            <span>From</span>
+                                            <span class="text-green">$2,136</span>
+                                            <span>pp</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-location"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Hanoi, Vietnam
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-arrow-right"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Vientiane, Laos
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-button">
+                                    <div class="book-button text-right">
+                                        <button class="golden-gradient-button">Book Now</button>
+                                    </div>
+                                    <div class="text-detail text-left">
+                                        <a href="#">Tour detail</a> → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product__list tour">
+                        <div class="product__item">
+                            <div class="product__image">
+                                <img src="images/app/demo-tour-1.png">
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__title">
+                                    Grand Indochina Tour
+                                </div>
+                                <div class="product__content__rate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    (120)
+                                </div>
+                                <div class="tour-info">
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-calendar"></span>
+                                        </div>
+                                        <div class="text">
+                                            <span class="text-green">21 Days</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-ticket"></span>
+                                        </div>
+                                        <div class="text weight-600">
+                                            <span>From</span>
+                                            <span class="text-green">$2,136</span>
+                                            <span>pp</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-location"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Hanoi, Vietnam
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-arrow-right"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Vientiane, Laos
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-button">
+                                    <div class="book-button text-right">
+                                        <button class="golden-gradient-button">Book Now</button>
+                                    </div>
+                                    <div class="text-detail text-left">
+                                        <a href="#">Tour detail</a> → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 product__list tour">
+                        <div class="product__item">
+                            <div class="product__image">
+                                <img src="images/app/demo-tour-1.png">
+                            </div>
+                            <div class="product__content">
+                                <div class="product__content__title">
+                                    Grand Indochina Tour
+                                </div>
+                                <div class="product__content__rate">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                    <span class="fa fa-star"></span>
+                                    (120)
+                                </div>
+                                <div class="tour-info">
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-calendar"></span>
+                                        </div>
+                                        <div class="text">
+                                            <span class="text-green">21 Days</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-ticket"></span>
+                                        </div>
+                                        <div class="text weight-600">
+                                            <span>From</span>
+                                            <span class="text-green">$2,136</span>
+                                            <span>pp</span>
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-location"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Hanoi, Vietnam
+                                        </div>
+                                    </div>
+                                    <div class="info-item">
+                                        <div class="icon">
+                                            <span class="nsy-icon nsy-arrow-right"></span>
+                                        </div>
+                                        <div class="text font-smaller">
+                                            Vientiane, Laos
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tour-button">
+                                    <div class="book-button text-right">
+                                        <button class="golden-gradient-button">Book Now</button>
+                                    </div>
+                                    <div class="text-detail text-left">
+                                        <a href="#">Tour Detail</a> → 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="explore text-center">
+                    <a href="">Explore Now</a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Quote -->
+        <div class="quote-section home-quote">
+            <div class="">
+                <div class="mini-intro">
+                    Heritages Vietnam Travel is a boutiquetravel agency providing a full range of tourism<br/>
+                    services to in-bound visitors and travellers to South East Asia.
+                </div>
+                <div class="quote">
+                    <div class="quote-icon">
+                        <div class="open-quote"></div>
+                    </div>
+                    <div class="quote-content">Inspired by the tastes, colors and cultural heritage of the region, Heritages Vietnam Travel<br/>
+                    is dedicated to delivering richer and more authentic experiences to its clients.</div>
+                    <div class="quote-icon">
+                        <div class="close-quote"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Feedback -->
+        <div class="feedback-section">
+            <div class="page-section-head">
+                <div class="page-section__title">
+                    Feedback from our customers
+                </div>
+                <div class="page-section__comment">
+                    See all feedback of our customers, they tell you about their trips!
+                </div>
+            </div>
+            <div class="page-tesmonial">
+                <div id="tesmonial-slide" class="carousel slide" data-ride="carousel">
+                  
+                    <!-- The slideshow -->
+                    <div class="carousel-inner container">
+                        <div class="carousel-item active">
+                            <div class="group-carousel row">
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://preview.colorlib.com/theme/meetme/img/personal.jpg">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Emilia Bianchi
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        Amazing tour, professional guide and driver, well planned tour days, diversity of destinations! All in one for a perfect trip. It was the best decision to take Upper Svaneti tour, cause mountainous parts of Georgia are really wonderful and picturesque!
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSOffyd8vU0a8gV00R5oPUC_IYvPen6ey-OY2cQxZrtX67XtZEOR9V1L9dS7eL3zdf1U&usqp=CAU">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Paul Richard
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        Me and my friends have been traveling around the world for such a long time and I may say, that was one of the best and impressive trips that we have ever been to. All of us are lovers of nature and it seems, Georgia has got various and a very beautiful landscape.
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://www.tanfieldchambers.co.uk/wp-content/uploads/2018/08/Edward-Blakeney.jpg">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Ellen Meyer
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        I still can’t keep my emotions about what I’ve seen! That was PRETTY AMAZING! What a beautiful country, what a lovely people… and Svaneti - such a wonderful place! Every single person should visit this place once in a lifetime.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="group-carousel row">
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://preview.colorlib.com/theme/meetme/img/personal.jpg">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Emilia Bianchi
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        Amazing tour, professional guide and driver, well planned tour days, diversity of destinations! All in one for a perfect trip. It was the best decision to take Upper Svaneti tour, cause mountainous parts of Georgia are really wonderful and picturesque!
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSOffyd8vU0a8gV00R5oPUC_IYvPen6ey-OY2cQxZrtX67XtZEOR9V1L9dS7eL3zdf1U&usqp=CAU">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Paul Richard
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        Me and my friends have been traveling around the world for such a long time and I may say, that was one of the best and impressive trips that we have ever been to. All of us are lovers of nature and it seems, Georgia has got various and a very beautiful landscape.
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://www.tanfieldchambers.co.uk/wp-content/uploads/2018/08/Edward-Blakeney.jpg">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Ellen Meyer
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        I still can’t keep my emotions about what I’ve seen! That was PRETTY AMAZING! What a beautiful country, what a lovely people… and Svaneti - such a wonderful place! Every single person should visit this place once in a lifetime.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="group-carousel row">
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://preview.colorlib.com/theme/meetme/img/personal.jpg">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Emilia Bianchi
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        Amazing tour, professional guide and driver, well planned tour days, diversity of destinations! All in one for a perfect trip. It was the best decision to take Upper Svaneti tour, cause mountainous parts of Georgia are really wonderful and picturesque!
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSOffyd8vU0a8gV00R5oPUC_IYvPen6ey-OY2cQxZrtX67XtZEOR9V1L9dS7eL3zdf1U&usqp=CAU">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Paul Richard
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        Me and my friends have been traveling around the world for such a long time and I may say, that was one of the best and impressive trips that we have ever been to. All of us are lovers of nature and it seems, Georgia has got various and a very beautiful landscape.
+                                    </div>
+                                </div>
+                                <div class=" col-md-4 group-carousel__item">
+                                    <div class="group-carousel__item-image row justify-content-center">
+                                        <img class="col-md-6" src="https://www.tanfieldchambers.co.uk/wp-content/uploads/2018/08/Edward-Blakeney.jpg">
+                                    </div>
+                                    <div class="group-carousel__item-title">
+                                        Ellen Meyer
+                                    </div>
+                                    <div class="group-carousel__item-dob">
+                                        14.01.2021
+                                    </div>
+                                    <div class="text-center group-carousel__item-intro">
+                                        I still can’t keep my emotions about what I’ve seen! That was PRETTY AMAZING! What a beautiful country, what a lovely people… and Svaneti - such a wonderful place! Every single person should visit this place once in a lifetime.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  
+                    <!-- Left and right controls -->
+                    <a class="carousel-control-prev" href="#tesmonial-slide" data-slide="prev">
+                        <span class="nsy-icon nsy-slide-arrow-left"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#tesmonial-slide" data-slide="next">
+                        <span class="nsy-icon nsy-slide-arrow-right"></span>
+                    </a>
+                    <!-- Indicators -->
+                    <ul class="carousel-indicators">
+                        <li data-target="#tesmonial-slide" data-slide-to="0" class="active"></li>
+                        <li data-target="#tesmonial-slide" data-slide-to="1"></li>
+                        <li data-target="#tesmonial-slide" data-slide-to="2"></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Product -->
+        <div class="our-product-section">
+            <div class="page-section-head">
+                <div class="page-section__title">
+                    Our Products
+                </div>
+                <div class="page-section__comment">
+                    Are you looking for the best options for your holiday? You're at the right time in the right place!
+                </div>
+            </div>
+            <div class="page-product container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="product-cover">
+                            <img src="images/app/tour1.png">
+                            <div class="product-tour-title">
+                                <div class="">Package Tours In Vietnam</div>
+                                <div class="explore">
+                                    Explore Now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="product__item">
+                                    <div class="product__image">
+                                        <img src="images/app/demo-tour-1.png">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content__title">
+                                            Grand Indochina Tour
+                                        </div>
+                                        <div class="product__content__rate">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            (120)
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="info-item">
+                                                <div class="icon">
+                                                    <span class="nsy-icon nsy-calendar"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span class="text-green">21 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="text-detail p-0 text-left">
+                                                    <a href="#">Tour detail</a> → 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product__item">
+                                    <div class="product__image">
+                                        <img src="images/app/demo-tour-1.png">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content__title">
+                                            Discover Vietnam Caves and
+                                        </div>
+                                        <div class="product__content__rate">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            (120)
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="info-item">
+                                                <div class="icon">
+                                                    <span class="nsy-icon nsy-calendar"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span class="text-green">21 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="text-detail p-0 text-left">
+                                                    <a href="#">Tour detail</a> → 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product__item">
+                                    <div class="product__image">
+                                        <img src="images/app/demo-tour-1.png">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content__title">
+                                            Grand Indochina Tour
+                                        </div>
+                                        <div class="product__content__rate">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            (120)
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="info-item">
+                                                <div class="icon">
+                                                    <span class="nsy-icon nsy-calendar"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span class="text-green">21 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="text-detail p-0 text-left">
+                                                    <a href="#">Tour detail</a> → 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product__item">
+                                    <div class="product__image">
+                                        <img src="images/app/demo-tour-1.png">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content__title">
+                                            Discover Vietnam Caves and Karsts Discover Vietnam Caves and Karsts Grand Indochina Tour Grand Indochina Tour
+                                        </div>
+                                        <div class="product__content__rate">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            (120)
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="info-item">
+                                                <div class="icon">
+                                                    <span class="nsy-icon nsy-calendar"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span class="text-green">21 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="text-detail p-0 text-left">
+                                                    <a href="#">Tour detail</a> → 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 order-md-2">
+                        <div class="product-cover">
+                            <img src="images/app/tour2.png">
+                            <div class="product-tour-title">
+                                <div class="">Short Tour In Vietnam</div>
+                                <div class="explore">
+                                    Explore Now
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="product__item">
+                                    <div class="product__image">
+                                        <img src="images/app/demo-tour-1.png">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content__title">
+                                            Grand Indochina Tour
+                                        </div>
+                                        <div class="product__content__rate">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            (120)
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="info-item">
+                                                <div class="icon">
+                                                    <span class="nsy-icon nsy-calendar"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span class="text-green">21 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="text-detail p-0 text-left">
+                                                    <a href="#">Tour detail</a> → 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product__item">
+                                    <div class="product__image">
+                                        <img src="images/app/demo-tour-1.png">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content__title">
+                                            Discover Vietnam Caves and
+                                        </div>
+                                        <div class="product__content__rate">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            (120)
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="info-item">
+                                                <div class="icon">
+                                                    <span class="nsy-icon nsy-calendar"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span class="text-green">21 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="text-detail p-0 text-left">
+                                                    <a href="#">Tour detail</a> → 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product__item">
+                                    <div class="product__image">
+                                        <img src="images/app/demo-tour-1.png">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content__title">
+                                            Grand Indochina Tour
+                                        </div>
+                                        <div class="product__content__rate">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            (120)
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="info-item">
+                                                <div class="icon">
+                                                    <span class="nsy-icon nsy-calendar"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span class="text-green">21 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="text-detail p-0 text-left">
+                                                    <a href="#">Tour detail</a> → 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="product__item">
+                                    <div class="product__image">
+                                        <img src="images/app/demo-tour-1.png">
+                                    </div>
+                                    <div class="product__content">
+                                        <div class="product__content__title">
+                                            Discover Vietnam Caves and Karsts Discover Vietnam Caves and Karsts Grand Indochina Tour Grand Indochina Tour
+                                        </div>
+                                        <div class="product__content__rate">
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
+                                            (120)
+                                        </div>
+                                        <div class="tour-info">
+                                            <div class="info-item">
+                                                <div class="icon">
+                                                    <span class="nsy-icon nsy-calendar"></span>
+                                                </div>
+                                                <div class="text">
+                                                    <span class="text-green">21 Days</span>
+                                                </div>
+                                            </div>
+                                            <div class="info-item">
+                                                <div class="text-detail p-0 text-left">
+                                                    <a href="#">Tour detail</a> → 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="explore text-center">
+                    <a href="">Explore Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLan trip -->
+        <div class="quote-section plan-your-trip">
+            <div class="">
+                <h3>PLAN YOUR PERFECT TRIP NOW!</h3>
+                <div class="mini-intro">
+                    Let we help you to take a 360-degree tour of some of the country's most compelling<br/> natural wonders and cultural attractions right here.
+                </div>
+                <a class="book-button" href="#">Book Now</a>
+            </div>
+        </div>
+
+        <!-- travel guide -->
+        <div class="travel-guide-section">
+            <div class="page-section-head">
+                <div class="page-section__title">
+                    Vietnam Travel Guide
+                </div>
+                <div class="page-section__comment">
+                    Whatever Your Passion, You'll Find it in Ann Arbor. Get Your Travel Guide Here!
+                </div>
+            </div>
+            <div class="travel-post">
+                <div class="travel-post__highlight"></div>
             </div>
         </div>
 
@@ -155,5 +1148,5 @@
         color: orange;
     }
 </style>
-<script src="../assets/js/modules_script.js"></script>
+<!-- <script src="../assets/js/modules_script.js"></script> -->
 </html>
