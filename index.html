@@ -3,21 +3,23 @@
 <head>
     <title>Viet Nam travel</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
     <link rel="stylesheet" href="css/icon.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@400;700&family=Open+Sans:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="css/icon.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- <script src="../assets/js/script.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/script.js"></script>
     <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 <body>
     <div class="main full-width-page">
@@ -617,13 +619,13 @@
                 </div>
             </div>
             <div class="page-tesmonial">
-                <div id="tesmonial-slide" class="carousel slide" data-ride="carousel">
+
+                <div id="tesmonial-slide">
                   
                     <!-- The slideshow -->
-                    <div class="carousel-inner container">
-                        <div class="carousel-item active">
-                            <div class="group-carousel row">
-                                <div class=" col-md-4 group-carousel__item">
+                    <div class="heri-container">
+                        <div class="home-slick">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://preview.colorlib.com/theme/meetme/img/personal.jpg">
                                     </div>
@@ -637,7 +639,7 @@
                                         Amazing tour, professional guide and driver, well planned tour days, diversity of destinations! All in one for a perfect trip. It was the best decision to take Upper Svaneti tour, cause mountainous parts of Georgia are really wonderful and picturesque!
                                     </div>
                                 </div>
-                                <div class=" col-md-4 group-carousel__item">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSOffyd8vU0a8gV00R5oPUC_IYvPen6ey-OY2cQxZrtX67XtZEOR9V1L9dS7eL3zdf1U&usqp=CAU">
                                     </div>
@@ -651,7 +653,7 @@
                                         Me and my friends have been traveling around the world for such a long time and I may say, that was one of the best and impressive trips that we have ever been to. All of us are lovers of nature and it seems, Georgia has got various and a very beautiful landscape.
                                     </div>
                                 </div>
-                                <div class=" col-md-4 group-carousel__item">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://www.tanfieldchambers.co.uk/wp-content/uploads/2018/08/Edward-Blakeney.jpg">
                                     </div>
@@ -665,11 +667,7 @@
                                         I still can’t keep my emotions about what I’ve seen! That was PRETTY AMAZING! What a beautiful country, what a lovely people… and Svaneti - such a wonderful place! Every single person should visit this place once in a lifetime.
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="group-carousel row">
-                                <div class=" col-md-4 group-carousel__item">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://preview.colorlib.com/theme/meetme/img/personal.jpg">
                                     </div>
@@ -683,7 +681,7 @@
                                         Amazing tour, professional guide and driver, well planned tour days, diversity of destinations! All in one for a perfect trip. It was the best decision to take Upper Svaneti tour, cause mountainous parts of Georgia are really wonderful and picturesque!
                                     </div>
                                 </div>
-                                <div class=" col-md-4 group-carousel__item">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSOffyd8vU0a8gV00R5oPUC_IYvPen6ey-OY2cQxZrtX67XtZEOR9V1L9dS7eL3zdf1U&usqp=CAU">
                                     </div>
@@ -697,7 +695,7 @@
                                         Me and my friends have been traveling around the world for such a long time and I may say, that was one of the best and impressive trips that we have ever been to. All of us are lovers of nature and it seems, Georgia has got various and a very beautiful landscape.
                                     </div>
                                 </div>
-                                <div class=" col-md-4 group-carousel__item">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://www.tanfieldchambers.co.uk/wp-content/uploads/2018/08/Edward-Blakeney.jpg">
                                     </div>
@@ -711,11 +709,7 @@
                                         I still can’t keep my emotions about what I’ve seen! That was PRETTY AMAZING! What a beautiful country, what a lovely people… and Svaneti - such a wonderful place! Every single person should visit this place once in a lifetime.
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="group-carousel row">
-                                <div class=" col-md-4 group-carousel__item">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://preview.colorlib.com/theme/meetme/img/personal.jpg">
                                     </div>
@@ -729,7 +723,7 @@
                                         Amazing tour, professional guide and driver, well planned tour days, diversity of destinations! All in one for a perfect trip. It was the best decision to take Upper Svaneti tour, cause mountainous parts of Georgia are really wonderful and picturesque!
                                     </div>
                                 </div>
-                                <div class=" col-md-4 group-carousel__item">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLSOffyd8vU0a8gV00R5oPUC_IYvPen6ey-OY2cQxZrtX67XtZEOR9V1L9dS7eL3zdf1U&usqp=CAU">
                                     </div>
@@ -743,7 +737,7 @@
                                         Me and my friends have been traveling around the world for such a long time and I may say, that was one of the best and impressive trips that we have ever been to. All of us are lovers of nature and it seems, Georgia has got various and a very beautiful landscape.
                                     </div>
                                 </div>
-                                <div class=" col-md-4 group-carousel__item">
+                                <div class="group-carousel__item">
                                     <div class="group-carousel__item-image row justify-content-center">
                                         <img class="col-md-6" src="https://www.tanfieldchambers.co.uk/wp-content/uploads/2018/08/Edward-Blakeney.jpg">
                                     </div>
@@ -757,24 +751,8 @@
                                         I still can’t keep my emotions about what I’ve seen! That was PRETTY AMAZING! What a beautiful country, what a lovely people… and Svaneti - such a wonderful place! Every single person should visit this place once in a lifetime.
                                     </div>
                                 </div>
-                            </div>
                         </div>
                     </div>
-                  
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#tesmonial-slide" data-slide="prev">
-                        <span class="nsy-icon nsy-slide-arrow-left"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#tesmonial-slide" data-slide="next">
-                        <span class="nsy-icon nsy-slide-arrow-right"></span>
-                    </a>
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#tesmonial-slide" data-slide-to="0" class="active"></li>
-                        <li data-target="#tesmonial-slide" data-slide-to="1"></li>
-                        <li data-target="#tesmonial-slide" data-slide-to="2"></li>
-                    </ul>
-
                 </div>
             </div>
         </div>
@@ -789,9 +767,9 @@
                     Are you looking for the best options for your holiday? You're at the right time in the right place!
                 </div>
             </div>
-            <div class="page-product container">
-                <div class="row">
-                    <div class="col-md-6">
+            <div class="page-product heri-container">
+                <div class="tour-grid">
+                    <div class="tour-grid__item">
                         <div class="product-cover">
                             <img src="images/app/tour1.png">
                             <div class="product-tour-title">
@@ -802,9 +780,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-md-6">
+                    <div class="tour-grid__item">
+                        <div class="tour-grid__item__list">
+                            <div class="tour-item">
                                 <div class="product__item">
                                     <div class="product__image">
                                         <img src="images/app/demo-tour-1.png">
@@ -839,7 +817,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="tour-item">
                                 <div class="product__item">
                                     <div class="product__image">
                                         <img src="images/app/demo-tour-1.png">
@@ -874,7 +852,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="tour-item">
                                 <div class="product__item">
                                     <div class="product__image">
                                         <img src="images/app/demo-tour-1.png">
@@ -909,7 +887,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="tour-item">
                                 <div class="product__item">
                                     <div class="product__image">
                                         <img src="images/app/demo-tour-1.png">
@@ -948,21 +926,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 order-md-2">
-                        <div class="product-cover">
-                            <img src="images/app/tour2.png">
-                            <div class="product-tour-title">
-                                <div class="">Short Tour In Vietnam</div>
-                                <div class="explore">
-                                    Explore Now
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <div class="row">
-                            <div class="col-md-6">
+                <div class="tour-grid-order">
+                    <div class="tour-grid-order__item">
+                        <div class="tour-grid-order__item__list">
+                            <div class="tour-item">
                                 <div class="product__item">
                                     <div class="product__image">
                                         <img src="images/app/demo-tour-1.png">
@@ -997,7 +964,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="tour-item">
                                 <div class="product__item">
                                     <div class="product__image">
                                         <img src="images/app/demo-tour-1.png">
@@ -1032,7 +999,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="tour-item">
                                 <div class="product__item">
                                     <div class="product__image">
                                         <img src="images/app/demo-tour-1.png">
@@ -1067,7 +1034,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
+                            <div class="tour-item">
                                 <div class="product__item">
                                     <div class="product__image">
                                         <img src="images/app/demo-tour-1.png">
@@ -1103,6 +1070,17 @@
                                 </div>
                             </div>
 
+                        </div>
+                    </div>
+                    <div class="tour-grid-order__item">
+                        <div class="product-cover">
+                            <img src="images/app/tour2.png">
+                            <div class="product-tour-title">
+                                <div class="">Short Tour In Vietnam</div>
+                                <div class="explore">
+                                    Explore Now
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1133,12 +1111,12 @@
                     Whatever Your Passion, You'll Find it in Ann Arbor. Get Your Travel Guide Here!
                 </div>
             </div>
-            <div class="travel-post container">
-                <div class="travel-post__highlight row">
-                    <div class="travel-post__image col-md-6">
+            <div class="travel-post heri-container">
+                <div class="travel-post__highlight heri-row">
+                    <div class="travel-post__image">
                         <img class="w-100" src="images/app/post1.png">
                     </div>
-                    <div class="travel-post__text col-md-6">
+                    <div class="travel-post__text">
                         <h5>Guideline to get Vietnam E-visa</h5>
                         <div class="content">
                             Vietnam E-visa is one of visa types issued to foreigners by Vietnamese Immigration Department visa electronic system. It is quite easy to obtain with some steps and people can do it personally at home. Just spend 15 minutes in front of your computer and you get the Vietnam E-visa application done. But before that, it is recommended to read the below article thoroughly to know step by step guide to get Vietnam E-visa.
@@ -1148,29 +1126,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="travel-post row">
-                    <div class="col-md-3">
+                <div class="travel-post__sample heri-row">
+                    <div class="">
                         <img class="w-100" src="images/app/post2.png">
                         <div class="travel-post__text">
-                            <h5>Guideline to get Vietnam E-visa</h5>
+                            <h6>Guideline to get Vietnam E-visa</h6>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="">
                         <img class="w-100" src="images/app/post2.png">
                         <div class="travel-post__text">
-                            <h5>Guideline to get Vietnam E-visa</h5>
+                            <h6>Guideline to get Vietnam E-visa</h6>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="">
                         <img class="w-100" src="images/app/post2.png">
                         <div class="travel-post__text">
-                            <h5>Guideline to get Vietnam E-visa</h5>
+                            <h6>Guideline to get Vietnam E-visa</h6>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="">
                         <img class="w-100" src="images/app/post2.png">
                         <div class="travel-post__text">
-                            <h5>Guideline to get Vietnam E-visa</h5>
+                            <h6>Guideline to get Vietnam E-visa</h6>
                         </div>
                     </div>
                 </div>
@@ -1182,13 +1160,13 @@
 
         <!-- Footer -->
         <footer>
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col-xs-12">
+            <div class="heri-container">
+                <div class=" footer-shorten">
+                    <div class="">
                         <div class="footer-logo">
                             <img src="images/app/logo.svg">
                         </div>
-                        <p class="footer-welcome">
+                        <p class="footer-welcome txt">
                             Welcome to the official website of Heritage Vietnam Travel. Visit our social media pages for more travel inspiration.
                         </p>
                         <div class="sns">
@@ -1214,42 +1192,36 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4 col-xs-12 text-white">
+                    <div class=" text-white">
                         <div class="footer-title">
                             Contact us
                         </div>
-                        <div class="row">
-                            <div class="col-md-3">Address</div>
-                            <div class="col-md-9">
+                        <div class="address-tb">
+                            <div class="">Address</div>
+                            <div class="">
                                 18 Floor, Keangnam Landmark 72
                                 Pham Hung, My Dinh, Hanoi, Vietnam
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">Tel:</div>
-                            <div class="col-md-9">
+                            <div class="">Tel:</div>
+                            <div class="">
                                 091 234 5678
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">Email:</div>
-                            <div class="col-md-9">
+                            <div class="">Email:</div>
+                            <div class="">
                                 <a class="link" href="">heritage.vietnamtravel@gmail.com</a>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-3">Website:</div>
-                            <div class="col-md-9">
+                            <div class="">Website:</div>
+                            <div class="">
                                 <a class="link" href="">http://heritagevietnamtravel.com</a>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-xs-12 text-white">
+                    <div class=" text-white">
                         <div class="footer-title">
                             Sign Up For Our Newsletter
                         </div>
-                        <div class="row">
-                            <div class="col-md-12">
+                        <div class="txt">
+                            <div class="">
                                 Receive new travel stories from Vietnam once a month in your inbox.
                             </div>
                         </div>
@@ -1263,8 +1235,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="">
+                    <div class="w-100">
                         <div class="copyright">
                             Copyright © 2021 Heritage Vietnam Travel. All rights reserved
                         </div>
@@ -1272,6 +1244,11 @@
                 </div>
             </div>
         </footer>
+        <div class="back-to-top">
+            <div class="to-top-border">
+                <img class="to-top-arrow" src="images/app/icon/top.svg">
+            </div>
+        </div>
     </div>
 </body>
 <style type="text/css">
@@ -1282,5 +1259,9 @@
         color: orange;
     }
 </style>
+<script src="js/script.js"></script>
 <!-- <script src="../assets/js/modules_script.js"></script> -->
+
+<script type="text/javascript">
+</script>
 </html>

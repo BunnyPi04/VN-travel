@@ -82,12 +82,29 @@ a {
 .weight-600 {
     font-weight: 600;
 }
-
+.heri-container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.heri-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.heri-row>.heri-col:not(.first-child) {
+    margin-left: 24px;
+}
+.icon {
+    display: inline-block;
+}
+.icon .nsy-icon {
+    display: block;
+}
 .product__item img {
     float: left;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: inline-grid;
 }
 
 /*@font-face {
@@ -315,6 +332,7 @@ a {
     line-height: 18px;
     opacity: 1;
     transition-duration: 0.2s;
+    font-size: 13px;
 }
 .golden-gradient-button:hover {
     opacity: 0.8;
@@ -412,6 +430,7 @@ a {
 }
 .page-tesmonial .group-carousel__item {
     text-align: center;
+    padding: 0 12px;
 }
 .page-tesmonial .group-carousel__item-image img {
     border-radius: 50%;
@@ -434,20 +453,61 @@ a {
     font-size: 14px;
     line-height: 24px;
 }
-.carousel-indicators li {
+.slick-list {
+    position: relative;
+}
+.slick-arrow {
+    position: absolute;
+    display: inline-flex;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    transition-duration: 0.5s;
+}
+.slick-arrow:hover {
+    opacity: 1;
+}
+.slick-arrow__left {
+    left: -90px;
+}
+.slick-arrow__right {
+    right: -90px;
+}
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 34px;
+    margin-bottom: 0;
+}
+.slick-dots li {
     width: 12px !important;
     height: 12px !important;
     border-radius: 50%;
     background: linear-gradient(130.3deg, #CBA054 -5.64%, #FFE381 104.06%);
     margin-left: 4px !important;
     margin-right: 4px !important;
+    cursor: pointer;
+    opacity: 0.3;
+}
+.slick-dots li.slick-active {
+    opacity: 1;
+}
+.slick-dots button {
+    display: none;
 }
 .carousel-indicators {
     position: relative !important;
 }
+/*.slick-prev {
+    width: 40px;
+    height: 40px
+}*/
 .carousel-control-next .nsy-icon, .carousel-control-prev .nsy-icon {
     width: 40px;
     height: 40px;
+    color: transparent;
+
 }
 .product-cover {
     position: relative;
@@ -518,6 +578,26 @@ a {
 .product__item .product__image {
     display: inline-block;
 }
+.tour-grid {
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 24px;
+}
+
+.tour-grid-order {
+    display: grid;
+    grid-gap: 23px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.tour-grid-order__item__list, .tour-grid__item__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+.tour-item .product__item {
+    margin-bottom: 0;
+}
 .plan-your-trip {
     background-image: url('../images/app/trip-bg.png');
 }
@@ -535,7 +615,7 @@ a {
     text-transform: uppercase;
     background-color: white;
     border-radius: 4px;
-    padding: 11px 18px;
+    padding: 21px 64px;
     display: inline-block;
     font-weight: 600;
     font-size: 13px;
@@ -550,9 +630,8 @@ a {
 .travel-post__image {
     border-radius: 4px;
 }
-.travel-post__text h5 {
+.travel-post__text h5, .travel-post__text h6 {
     color: var(--ink);
-    font-size: 24px;
     font-weight: 600;
     line-height: 32px;
     margin-top: 10px;
@@ -566,6 +645,10 @@ a {
     font-size: 14px;
     color: var(--black);
     line-height: 22px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .view-more {
     margin-top: 18px;
@@ -576,10 +659,22 @@ a {
     line-height: 18px;
     color: var(--ink);
 }
-.travel-post {
+.travel-post__highlight {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+.travel-post__sample {
     margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
 }
 .travel-post .travel-post__text h5 {
+    font-size: 24px;
+}
+
+.travel-post .travel-post__text h6 {
     font-size: 14px;
 }
 footer {
@@ -646,6 +741,7 @@ footer .link, footer .link:hover {
 }
 .footer-form input {
     padding: 11px 18px;
+    border: none;
 }
 .copyright {
     border-top: 1px solid var(--dark-hr);
@@ -653,6 +749,26 @@ footer .link, footer .link:hover {
     margin-top: 64px;
     padding-top: 19px;
     font-size: 16px;
+}
+.back-to-top {
+    position: fixed;
+    transition: all 0.4s ease-in-out 0s;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+}
+footer .footer-shorten {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+}
+footer .txt {
+    font-size: 14px;
+}
+footer .address-tb {
+    display: grid;
+    grid-template-columns: 60px auto;
+    grid-column-gap: 24px;
 }
 
 

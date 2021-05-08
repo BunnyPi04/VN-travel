@@ -1,0 +1,56 @@
+@media screen and (max-width: 768px) {
+    .page-section-head {
+        padding-top: 40px;
+        padding-bottom: 28px;
+    }
+    .tour-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tour-grid-order {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tour-grid-order__item:first-child {
+        order: 2;
+    }
+    .tour-grid-order__item:last-child {
+        order: 1;
+    }
+    .book-button.white-button {
+        padding: 13px 66px;
+    }
+    .travel-post__sample {
+        margin-top: 24px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 24px;
+    }
+    .travel-post .travel-post__text h5 {
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        line-height: 22px;
+    }
+
+    .travel-post .travel-post__text h6 {
+        font-size: 13px;
+        margin-bottom: 0;
+        line-height: 22px;
+        margin-top: 16px;
+    }
+    .explore a {
+        padding: 13px 63px;
+    }
+    .heri-container {
+        width: auto;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    footer .footer-shorten {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 12px;
+    }
+    footer .txt {
+        font-size: 13px;
+    }
+
+}
